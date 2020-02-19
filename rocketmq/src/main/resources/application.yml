@@ -1,0 +1,20 @@
+# 应用名称、默认profile
+spring:
+  application:
+    name: rocketmq
+  profiles:
+    active: dev
+
+# Server
+server:
+  port: 8731
+
+# RocketMQ
+rocket:
+  name_server:
+    address: 120.27.215.53:9876;47.99.196.196:9876
+  producer:
+    group: group1
+    timeout: 20000
+  consumer:
+    group: 20000

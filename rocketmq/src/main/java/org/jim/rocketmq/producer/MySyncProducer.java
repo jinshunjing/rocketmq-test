@@ -12,9 +12,9 @@ import java.io.UnsupportedEncodingException;
 
 public class MySyncProducer {
 
-    private static final String NAME_SERVER_ADDR = "localhost:9876";
+    private static final String NAME_SERVER_ADDR = "120.27.215.53:9876";
 
-    private static final String PRODUCER_GROUP = "groupp1";
+    private static final String PRODUCER_GROUP = "group1";
     private static final String TOPIC = "topic2";
     private static final String TAG = "tag1";
 
@@ -26,7 +26,6 @@ public class MySyncProducer {
 
         // 默认开启VIP，连接内部IP的10909端口
         producer.setVipChannelEnabled(false);
-
         // 默认3秒，经常timeout
         producer.setSendMsgTimeout(20_000);
 

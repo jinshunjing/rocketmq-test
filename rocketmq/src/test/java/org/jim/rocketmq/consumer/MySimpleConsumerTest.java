@@ -12,6 +12,7 @@ public class MySimpleConsumerTest {
         MySimpleConsumer consumer = new MySimpleConsumer();
         consumer.init();
         consumer.run();
+        Thread.sleep(30_000L);
     }
 
 }

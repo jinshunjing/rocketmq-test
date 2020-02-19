@@ -10,10 +10,9 @@ import org.apache.rocketmq.common.message.MessageExt;
 import java.util.List;
 
 public class MySimpleConsumer {
+    private static final String NAME_SERVER_ADDR = "47.99.196.196:9876";
 
-    private static final String NAME_SERVER_ADDR = "localhost:9876";
-
-    private static final String GROUP = "groupc1";
+    private static final String GROUP = "group1";
     private static final String TOPIC = "topic2";
 
     private DefaultMQPushConsumer consumer;
